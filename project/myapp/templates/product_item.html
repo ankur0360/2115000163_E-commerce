@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        {{ product_item.name }}
+    </h2>
+    <p>
+        Price: ${{ product_item.price }}.00
+    </p>
+    <p>
+        Rating: {{ product_item.rating }}
+    </p>
+    <p>
+        Discount : {{ product_item.discount }}%
+    </p>
+    <p>
+        Availability : {{ product_item.availability }}
+    </p>
+    <p>
+        <a href="{% url 'home' %}">Go to Home Page</a>
+    </p>
+</body>
+</html>

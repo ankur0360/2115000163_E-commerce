@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1>Products Page</h1>
-    <form action="{% url 'register' %}" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         {{form.as_p}}
+        <button>Submit</button>
     </form>
-    <button>Submit</button>
+   <p>
+    <a href="{% url 'home' %}">Go to Home Page</a>
+   </p>
 </body>
 </html>

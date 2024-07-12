@@ -7,9 +7,14 @@
 </head>
 <body>
     {% for item in cata.cata %}
-        <p>
-                {{item.catagory}}
-        </p>
+                <p>
+                    <a href=" {% url 'catagories_items' pk=item.pk %}">
+                        {{item.catagory}}
+                    </a>
+                </p>
     {% endfor %}
+    <p>
+        <a href="{% url 'home' %}">Go to Home Page</a>
+    </p>
 </body>
 </html>
